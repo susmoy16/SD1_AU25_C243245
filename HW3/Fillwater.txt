@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Fillwater {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Is bottle-1 full? (Y=1/N=0): ");
+        int b1 = sc.nextInt();
+
+        System.out.print("Is bottle-2 full? (Y=1/N=0): ");
+        int b2 = sc.nextInt();
+
+        System.out.print("Is bottle-3 full? (Y=1/N=0): ");
+        int b3 = sc.nextInt();
+
+        int count = b1 + b2 + b3;  // count how many are full
+
+        if (count == 1)
+            System.out.println("Water filling time.");
+        else
+            System.out.println("Not now.");
+    }
+}

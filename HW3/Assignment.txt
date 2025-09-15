@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Assignment {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the starting time in 24hr format: ");
+        double start = sc.nextDouble();
+
+        if (start + 3 <= 22)
+            System.out.println("You will finish all assignments on time!");
+        else
+            System.out.println("You can't finish all assignments before 10 PM.");
+    }
+}

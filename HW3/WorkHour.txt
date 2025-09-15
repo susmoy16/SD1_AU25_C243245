@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class WorkHour {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+
+        if (y < x)
+            System.out.println("Total working hours in a week: " + (4 * x + y));
+        else
+            System.out.println("Chill day's hours can't be equal to or more than other days.");
+    }
+}
